@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navbar{
+    background-color: #181818;
+}
+
+.a, .lgo{
+    color: #707070;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+.navul {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+.main-info-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pad h1{
+    color: #707070;
+}
+
+.marv {
+    color: crimson;
+}
+
+a {
+    text-decoration: none;
+    font-size: .9rem;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.main-info-section{
+    height: calc(100vh - 81.6px) ;
+}
+
+.text {
+    margin-top: 120px;
+}
+
+.text h1 {
+    color: #fff;
+    font-size: 3rem;
+    cursor: context-menu;
+}
+
+body{
+    background-color: #252627;
+}
+
+.text2 {
+    color: #fff;
+
+}
+
+.text span{
+    display: inline-block;
+}
+
+span:hover {
+    color: #48cfad ;
+    transition: all .5s ease-in-out;
+}
+
+span.marv{
+    color: #ed5565;
+}
+
+.link{
+    padding: 12px 25px ;
+    background-color: none;
+    border: 3px solid #ed5565 ;
+    color: #ed5565;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 60px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+
+.link:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.link::before{
+    content: '';
+    background-color: #ed5565;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+.link:hover::before{
+    height: 100%;
+}
+
+.body2{
+    margin-top: 100px;
+}
+
+.body3{
+    margin-top: 20px;
+}
+.late {
+    color: #fff;
+    cursor: context-menu;
+}
+.late:hover{
+    color:#48cfad;
+    transition: .5s ease-in-out;
+}
+
+.img{
+    width: 400px;
+    height: 400px;
+}
+
+
+.img-wrapper{
+    width: 5px;  
+}
+
+.footer{
+    margin-top: px;
+}
+
