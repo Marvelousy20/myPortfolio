@@ -133,7 +133,7 @@ span.marv{
 }
 
 .link::before{
-    content: '';
+    content: "";
     background-color: #ed5565;
     position: absolute;
     left: 0px;
