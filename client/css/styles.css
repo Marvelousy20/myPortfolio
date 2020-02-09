@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    padding: 150px 0;
+}
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +27,7 @@ header {
     padding: 20px 0;
 }
 
-.navbar{
+.container-fluid{
     background-color: #181818;
 }
 
@@ -31,6 +35,16 @@ header {
     color: #707070;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.lgo{
+    cursor: default;
+}
+
+.a:hover{
+    color: #48cfad;
+    text-decoration: none;
+    transition: .5s all ease-in;
 }
 
 ul li {
@@ -88,6 +102,7 @@ body{
 .text span{
     display: inline-block;
 }
+
 
 span:hover {
     color: #48cfad ;
@@ -162,3 +177,63 @@ span.marv{
     margin-top: px;
 }
 
+.body3 h1{
+    color: #707070;
+    font-size: 5rem;
+    opacity: .5;
+}
+
+.languages{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.text{
+    color: #fff;
+    margin-top: 50px;
+}
+
+.text.about{
+    font-size: 2rem;
+}
+
+.body4 h1{
+    color: #707070;
+    font-size: 5rem;
+    opacity: .5;
+    margin-top: 60px;
+}
+
+
+form input, 
+form textarea{
+    display: block;
+    padding: 15px;
+    width: 500px;
+    background-color: #252627;
+    border: 3px solid #707070;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+form input:last-child{
+    width: 150px;
+    background-color: #ed5565;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+    .container-fluid,.navbar, .header{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -33,3 +33,7 @@ Insert content before, or after, the content of an element
     padding-top:2px;
     border-radius: 4px;
 }
+
+
+I used 'fixed-to' to fix the header but the body padding moved up and hide behind the header. To fix this,
+I went to adjust the padding-top for the body i.e (padding: 100px);
