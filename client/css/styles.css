@@ -202,7 +202,7 @@ span.marv{
     color: #707070;
     font-size: 5rem;
     opacity: .5;
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 
@@ -228,7 +228,97 @@ form input:last-child{
     background-color: #ed5565;
     border: none;
     cursor: pointer;
+
 }
+
+
+.img-display{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.img-display a{
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #fff;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.back-none{
+    border: none;
+}
+
+.hobbies{
+    color: #707070;
+}
+
+.hobbies-listed{
+    margin-left: 30px;
+}
+.hobbies-listed li{
+    font-weight: bold;
+    list-style: disc;
+    padding: 3px;
+}
+
+/*Over rides bootsrap's container class*/
+.full-width {
+    width: 99.4vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section.myworks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+}
+
+.zodiac{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.zodiac:hover{
+    text-decoration: none;
+}
+
+.icon{
+    height: 40px;
+    margin: 30px 0;
+    padding: 0 3px;
+}
+
+.github {
+    background:#fff;
+}
+
+.icons{
+    margin:-20px 0;
+}
+
 
 @media screen and (max-width: 550px) {
     .container-fluid,.navbar, .header{
@@ -236,4 +326,36 @@ form input:last-child{
         padding: 0;
         margin: 0;
     }
+
+    .full-width{
+            width: 150vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
+
+section.myworks img{
+    width: 60%;
+    padding: 20px 0;
+}
+
+
+
+.slider{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: crimson;
+    opacity: .5;
+    /* background: linear-gradient(to left, #ba7453, #d1a984);  */
+    z-index: 1;
 }
