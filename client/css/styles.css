@@ -286,6 +286,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10%;
 }
 
 
@@ -306,19 +307,11 @@ section.myworks{
 }
 
 .icon{
-    height: 40px;
-    margin: 30px 0;
+    height: 30px;
     padding: 0 3px;
+    position: relative;
+    margin-bottom: -15px;
 }
-
-.github {
-    background:#fff;
-}
-
-.icons{
-    margin:-20px 0;
-}
-
 
 @media screen and (max-width: 550px) {
     .container-fluid,.navbar, .header{
