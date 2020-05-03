@@ -4,12 +4,25 @@
     box-sizing: border-box;
 }
 
+@-ms-viewport{
+    width: device-width !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
+.logo{
+    color: #707070;
+}
+.logo:hover{
+    text-decoration: none;
+    color: #707070;;
+}
+
 body{
     padding: 150px 0;
+    width: 95vw !important;
 }
 
 nav ul {
@@ -117,6 +130,7 @@ form input:last-child{
     .move{
        width: 530px;
     }
+
 }
 
 
