@@ -9,46 +9,41 @@ html {
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #252627;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.container-fluid{
+    background-color: #181818;
 }
 
 div.container{
     font-size: 20px;
 }
 
-.item {
+#disp{
     display: none;
 }
 
-.item.active{
-    display:block ;
+
+
+#hire{
+    background-color: crimson;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+#hire:hover{
+    text-decoration: none;
 }
 
-ul{
-    list-style: none;
-    margin-top: 45px;
-    text-align: center;
-    align-self: center;
-}
-
-li{
-    padding: 5px;
-}
-
-#logo{
-    position: absolute;
-    font-size: 20px;
-    cursor: default;
-}
 
 .read,.less{
-    color: blue;
+    color: #fff;
     background: none;
     text-decoration: underline;
     border: none;
@@ -78,13 +73,96 @@ li{
     justify-content: center;
 }
 
-#hire{
-    background-color: crimson;
-    color: wheat;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#egghead{
+    color:greenyellow;
 }
 
-#hire:hover{
-    text-decoration: none;
+@media screen and (min-width: 600px) {
+    ul{
+        list-style: none;
+        display: flex;
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    li{
+        margin-right: 25px;
+    }
+
+    #hire{
+        margin-top: 10px;
+    }
+    
+    a{
+        color: #707070;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: #48cfad;
+    }
+
+    #logo{
+        position: absolute;
+        color: #707070;
+        font-size: 20px;
+        cursor: default;
+        font-family: sans-serif;
+        padding: 20px;
+    }
+    
 }
+
+@media screen and (max-width: 600px) {
+    #disp{
+        display: block;
+        margin-top: 15px;
+    }
+        
+    .item {
+        display: none;
+    }
+
+    .item.active{
+        display:block ;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    ul{
+        list-style: none;
+        text-align: center;
+        align-self: center;
+    }
+
+    li{
+        padding: 5px;
+    }
+    #hire{
+        margin-top: 10px;
+    }
+    a{
+        color: #707070;
+        font-family: sans-serif;
+        cursor: default;
+        font-weight: 600;
+    }
+
+    a:hover{
+        color: #48cfad;
+    }
+
+    #logo{
+        position: absolute;
+        color: #707070;
+        font-size: 20px;
+        cursor: default;
+        font-family: sans-serif;
+        margin-top: 15px;
+    }
+}
+

@@ -13,10 +13,6 @@ body{
     width: 95vw !important;
 }
 
-@-ms-viewport{
-    width: device-width !important;
-}
-
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +70,7 @@ ul li {
     color: crimson;
 }
 
-a {
+a{
     text-decoration: none;
     font-size: .9rem;
     position: relative;
@@ -89,33 +85,9 @@ a {
     margin-top: 120px;
 }
 
-.text h1 {
-    color: #fff;
-    font-size: 3rem;
-    cursor: context-menu;
-}
 
 body{
     background-color: #252627;
-}
-
-.text2 {
-    color: #fff;
-
-}
-
-.text span{
-    display: inline-block;
-}
-
-
-span:hover {
-    color: #48cfad ;
-    transition: all .5s ease-in-out;
-}
-
-span.marv{
-    color: #ed5565;
 }
 
 .link{
@@ -168,73 +140,7 @@ span.marv{
     transition: .5s ease-in-out;
 }
 
-.img{
-    width: 400px;
-    height: 400px;
-}
 
-
-.img-wrapper{
-    width: 5px;  
-}
-
-.footer{
-    margin-top: px;
-}
-
-.body3 h1{
-    color: #707070;
-    font-size: 5rem;
-    opacity: .5;
-}
-
-.languages{
-    color: #fff;
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-
-.text{
-    color: #fff;
-    margin-top: 50px;
-}
-
-.text.about{
-    font-size: 2rem;
-}
-
-.body4 h1{
-    color: #707070;
-    font-size: 5rem;
-    opacity: .5;
-    margin-top: 0px;
-}
-
-
-form input, 
-form textarea{
-    display: block;
-    padding: 15px;
-    width: 500px;
-    background-color: #252627;
-    border: 3px solid #707070;
-    margin: 20px 0;
-    outline: none;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-}
-
-form input:last-child{
-    width: 150px;
-    background-color: #ed5565;
-    border: none;
-    cursor: pointer;
-
-}
 
 
 .img-display{
@@ -262,53 +168,11 @@ i {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
+
 .back-none{
     border: none;
 }
 
-.hobbies{
-    color: #707070;
-}
-
-.hobbies-listed{
-    margin-left: 30px;
-}
-.hobbies-listed li{
-    font-weight: bold;
-    list-style: disc;
-    padding: 3px;
-}
-
-/*Over rides bootsrap's container class*/
-.full-width {
-    width: 101vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    color: teal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-}
-
-section.myworks{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    display: none;
-}
-
-.zodiac{
-    color: #fff;
-    text-decoration: underline;
-}
-
-.zodiac:hover{
-    text-decoration: none;
-}
 
 .icon{
     height: 30px;
@@ -325,32 +189,15 @@ section.myworks{
         margin: 0;
     }
     
-    @-ms-viewport{
-        width: device-width !important;
-    }
-
-
-    .full-width{
-        width: 150vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        color: teal;
-        display: flex;
-        justify-content: center;
-        align-items: center;     
-    }
-
+    
     .slider{
         position: absolute;
         top: 0;
         height: 100vh;
         width: 150vw !important;
         background: crimson !important;
-        opacity: .5;
-        /* background: linear-gradient(to left, #ba7453, #d1a984);  */
+        opacity: .2 !important;
+        background: linear-gradient(to left, #ba7453, #d1a984) !important; 
         z-index: 1;       
     }
 
@@ -373,8 +220,234 @@ section.myworks{
     top: 0;
     height: 100vh;
     width: 100%;
-    background: crimson;
-    opacity: .5;
-    /* background: linear-gradient(to left, #ba7453, #d1a984);  */
+    background: crimson ;
+    opacity: .2;
+    background: linear-gradient(to left, #ba7453, #d1a984); 
     z-index: 1;
+}
+
+
+@media screen and (min-width: 600px) {
+    .text h1 {
+        color: #fff;
+        font-size: 3rem;
+        cursor: context-menu;
+    }
+    
+    .text2 {
+        color: #fff;
+    }
+
+    .text span{
+        display: inline-block;
+    }
+
+    span:hover {
+        color: #48cfad ;
+        transition: all .5s ease-in-out;
+    }
+    
+    span.marv{
+        color: #ed5565;
+    }
+    
+    .body3 h1{
+        color: #707070;
+        font-size: 5rem;
+        opacity: .5;
+    }
+
+    .languages{
+        color: #fff;
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+
+    .text{
+        color: #fff;
+        margin-top: 50px;
+    }
+    
+    .text.about{
+        font-size: 2rem;
+    }
+
+    .body4 h1{
+        color: #707070;
+        font-size: 5rem;
+        opacity: .5;
+        margin-top: 0px;
+    }
+
+    form input, 
+    form textarea{
+        display: block;
+        padding: 15px;
+        width: 500px;
+        background-color: #252627;
+        border: 3px solid #707070;
+        margin: 20px 0;
+        outline: none;
+        font-size: 1.2rem;
+        color: #fff;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    form input:last-child{
+        width: 150px;
+        background-color: #ed5565;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hobbies{
+        color: #707070;
+    }
+    
+    .hobbies-listed{
+        margin-left: 30px;
+    }
+    .hobbies-listed li{
+        font-weight: bold;
+        list-style: disc;
+        padding: 3px;
+    }
+
+    
+
+/*Over rides bootsrap's container class*/
+    .full-width {
+        width: 126.1%;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        color: teal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+    }      
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .text h1 {
+        color: #fff;
+        font-size: 3rem;
+        cursor: context-menu;
+    }
+    
+    
+    .text2 {
+        color: #fff;
+    }
+
+    .text span{
+        display: inline-block;
+    }
+
+    span:hover {
+        color: #48cfad ;
+        transition: all .5s ease-in-out;
+    }
+    
+    span.marv{
+        color: #ed5565;
+    }
+    
+    .body3 h1{
+        color: #707070;
+        font-size: 3em;
+        opacity: .5;
+    }
+
+    .languages{
+        color: #fff;
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    .text{
+        color: #fff;
+        margin-top: 50px;
+    }
+    
+    .text.about{
+        font-size: 1.2rem;
+    }
+
+    .body4 h1{
+        color: #707070;
+        font-size: 3rem;
+        opacity: .5;
+        margin-top: 0px;
+    }
+
+    form input, 
+    form textarea{
+        display: block;
+        padding: 15px;
+        width: 100%;
+        background-color: #252627;
+        border: 3px solid #707070;
+        margin: 20px 0;
+        outline: none;
+        font-size: .8rem;
+        color: #fff;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    form input:last-child{
+        width: 150px;
+        background-color: #ed5565;
+        border: none;
+        cursor: pointer;
+    }
+        
+    .hobbies{
+        color: #707070;
+    }
+    
+    .hobbies-listed{
+        margin-left: 30px;
+    }
+    .hobbies-listed li{
+        font-weight: bold;
+        list-style: disc;
+        padding: 3px;
+    }
+        
+    h4{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }   
+
+    .link{
+        font-size: .7em;
+        font-weight: 500;
+    }
+
+    /*Over rides bootsrap's container class*/
+    .full-width {
+        width: 120%;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        color: teal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8%;
+    }
 }

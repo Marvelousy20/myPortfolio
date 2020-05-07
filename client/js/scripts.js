@@ -27,15 +27,14 @@ let tl = new TimelineMax() ;
 
 
 tl.fromTo(slider, .5, {height: '100%'}, {height: '0%', ease: Power2.easeInOut})
-.fromTo(logo, .5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-.fromTo(nav, .5, {x: '-600%'}, {x: '0%', ease: Power2.easeInOut})
-.fromTo(one, .5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-.fromTo(two, .5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-.fromTo(three, .5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-.fromTo(four, .5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-.fromTo(languages, .5, {opacity: 0}, {opacity:1}, '-=.5')
-.fromTo(languages, 1, {x:100}, {x:0}, '-=.5')
-.to(languages, 1, {rotate: "+=360"}) ;
+.fromTo(logo, .2, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+.fromTo(nav, .2, {x: '-600%'}, {x: '0%', ease: Power2.easeInOut})
+.fromTo(one, .2, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+.fromTo(two, .2, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+.fromTo(three, .2, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+.fromTo(four, .2, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+.fromTo(languages, .2, {opacity: 0}, {opacity:1}, '-=.2')
+.fromTo(languages, .3, {x:100}, {x:0}, '-=.2')
 
 
 // .to(languages, {duration: 3, rotation: 360}) 

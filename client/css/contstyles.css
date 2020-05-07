@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-@-ms-viewport{
-    width: device-width !important;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -74,18 +70,6 @@ body{
     background-color: #252627;
 }
 
-
-.img-wrapper{
-    width: 5px;  
-}
-
-.body3 h1{
-    color: #707070;
-    font-size: 5rem;
-    opacity: .5;
-}
-
-
 .body4 h1{
     color: #707070;
     font-size: 5rem;
@@ -120,17 +104,47 @@ form input:last-child{
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .container-fluid,.navbar, .header{
         width: 100%;
         padding: 0;
         margin: 0;
     }
 
-    .move{
-       width: 530px;
+    .navul{
+        width: 100%;
     }
 
+    .body4 h1{
+        color: #707070;
+        font-size: 4rem;
+        opacity: .5;
+        margin-top: 0px;
+    }
+
+    form input, 
+    form textarea{
+        display: block;
+        padding: 15px;
+        width: 100%;
+        background-color: #252627;
+        border: 3px solid #707070;
+        margin: 20px 0;
+        outline: none;
+        font-size: 1.2rem;
+        color: #fff;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    form input:last-child{
+        width: 100px;
+        background-color: #ed5565;
+        border: none;
+        cursor: pointer;
+    }   
 }
 
 
