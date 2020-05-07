@@ -320,7 +320,7 @@ i {
 
 /*Over rides bootsrap's container class*/
     .full-width {
-        width: 126.1%;
+        width: 125.9%;
         position: relative;
         left: 50%;
         right: 50%;
