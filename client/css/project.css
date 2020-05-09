@@ -52,11 +52,17 @@ p{
 
 a{
     text-decoration: none;
-    color: #fff;
 }
 
 a:hover{
     text-decoration: none;
+}
+
+button{
+    padding: 15px;
+    border: none;
+    background: crimson;
+    width: 150px;
 }
 
 
@@ -87,7 +93,10 @@ a:hover{
     }
 
     .live{
+        color: #fff;
         text-decoration: underline;
+        font-size: 20px;
+        font-weight: 500;
     }
     #logo{
         position: absolute;
@@ -128,6 +137,15 @@ a:hover{
 
     li{
         padding: 5px;
+    }
+
+    button{
+        padding: 10px;
+    }
+
+    .live{
+        color: #fff;
+        font-size: 20px;
     }
 
     a{
