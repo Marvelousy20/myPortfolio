@@ -47,3 +47,32 @@ tl.fromTo(slider, .5, {height: '100%'}, {height: '0%', ease: Power2.easeInOut})
 
 //.fromTo(pad, 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
 
+
+
+let myname = document.getElementById('name')
+let myemail = document.getElementById('email')
+let mymessage = document.getElementById('message')
+
+$("form").on("submit", function() {
+    $.ajax({
+        url: "https://formspree.io/mnqbbldl",
+        method: "POST",
+        data: {
+            name: name.value,
+            message: message.value,
+            email: email.value
+        },
+        dataType: "json",
+        success: function(success) {
+            alert("Form submitted successfully, thank you!")
+        }
+    });
+    myname.value = '';
+    myemail.value = '';
+    mymessage.value = '' ;
+    return false ;
+})
+
+
+
+  //https://formspree.io/mnqbbldl
