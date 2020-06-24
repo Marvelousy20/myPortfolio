@@ -69,7 +69,7 @@ $("form").on("submit", function() {
     });
     myname.value = '';
     myemail.value = '';
-    mymessage.value = '' ;
+    mymessage.value = '';
     return false ;
 })
 
